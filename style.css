@@ -1,0 +1,68 @@
+body
+{
+  font-family: "Courier New", Courier, monospace;
+  background-color: #343536;
+  text-align: center;
+}
+
+h1
+{
+  margin-top: 60px;
+  color: #ABF1F0;
+  text-shadow: 2px 2px 4px #eae879; 
+}
+
+h2
+{
+  margin-top: -30px;
+  font-size: 20px;
+  color: #eae879;
+}
+
+h3
+{
+  margin-top: 20px;
+  font-size: 25px;
+  color: #eae879;
+}
+
+.buttons
+{
+  margin: 15px;
+  height: 35px;
+  width: 85px;
+  background-color: #gray;
+  font: 12pt Courier;
+  box-shadow: 4px 4px 20px gray;
+}
+
+.buttons:hover
+{
+  background-color: #ABF1F0;
+}
+
+.buttons:active
+{
+  background-color: #eae879;
+}
+
+
+#board {
+  
+  margin: 30px auto;
+  box-shadow: 6px 6px 60px #eae879;
+	display: flex;
+	flex-wrap: wrap;
+  width: 50vw;
+
+}
+.row {
+	display: flex;
+}
+.tile {
+	/*background-color: #D3E99B;*/
+  background-color: #343536;
+	height: 3.125vw;
+	min-width: 3.125vw;
+  border: 0.05vw solid #bdc149;
+}
