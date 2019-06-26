@@ -1,0 +1,54 @@
+<!-- 
+Сначала я неправильно сделала на canvas:
+https://glitch.com/edit/#!/smiling-cockroach?path=index.html:1:0
+-->
+
+<link rel="stylesheet" href="/style.css">
+<script src="/script.js" defer></script>
+
+<html>
+  <body>
+ 
+    <h1>Игра "Жизнь"</h1>
+    
+        
+	<div id="board"></div>
+    
+    <input class="slider" type="range" min="0.5" max="5" value="0.5" step="0.5" oninput="time(this.value)">
+    <br><br><br><h2 id="timer">0.5 сек.</h2>
+    
+    <div>
+      <button id = "play" class = "buttons" onclick = "run()">Играть</button>
+      <button class = "buttons" onclick = "clean()">Заново</button>
+    </div>
+    
+    <h3><p>Внимание:</p></h3>
+    <h2><p>
+      на ход у вас есть всего 5 секунд! <br><br>
+      Можете попробовать нарисовать следующие изображения <br>
+      или же просто нажать на любую картинку:
+    </p></h2>
+    
+    <p>
+    <img src="https://pp.userapi.com/c855220/v855220241/5feed/y1gaNKJwiK0.jpg" height = "250px" onclick="firstEx()" >
+      <img src="https://pp.userapi.com/c856132/v856132395/56ba8/vb8d1Mfx5zw.jpg" height = "250px" onclick="secondEx()">
+    <img src="https://pp.userapi.com/c855220/v855220241/5fef4/9mrz9h1lPvo.jpg" height = "250px" onclick="thirdEx()">
+    </p>
+    
+    <h3><p>Примечание:</p></h3>
+    <h2> 
+      <p>из-за размеров холста может работать по разному! <br><br>
+        Вот что может получиться:</p>
+    </h2>
+    
+    <p>
+      <img src="https://i0.wp.com/upload.wikimedia.org/wikipedia/commons/0/07/Game_of_life_pulsar.gif" height = "250px" >
+      <img src="https://i2.wp.com/conwaylife.com/w/images/f/f1/Copperhead.gif" height = "250px">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/I-Column.gif" height = "250px" >
+    </p>
+    
+    </body>
+</html>
+
+<script>
+</script>
